@@ -6,6 +6,7 @@
   --body-color: #888;
   --color-white: #fff;
   --blue-color: #81b3d2;
+  --brown-color: #766357;
   --basic-font: "PT Sans", "Arial", sans-serif;
 }
 
@@ -254,5 +255,55 @@ ul {
 
   font-size: 14px;
   line-height: 21px;
+  text-transform: uppercase;
+}
+
+.cta {
+  padding-top: 55px;
+  min-height: 291px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.cta__title {
+  margin-left: -10px;
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.cta__text {
+  margin-top: 33px;
+
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.cta__search {
+  width: 568px;
+  margin: 44px auto 0 auto;
+}
+
+.cta__header {
+  padding: 30px;
+
+  background-color: var(--brown-color);
+}
+
+.cta__content {
+  min-height: 395px;
+
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.cta__label {
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
   text-transform: uppercase;
 }
