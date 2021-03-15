@@ -6,6 +6,7 @@
   --body-color: #888;
   --color-white: #fff;
   --blue-color: #81b3d2;
+  --advantages-color: #eee;
   --basic-font: "PT Sans", "Arial", sans-serif;
 }
 
@@ -160,13 +161,13 @@ ul {
 }
 
 .service__home--home {
-  padding-top: 58px;
-  padding-left: 55px;
+  padding-top: 61px;
+  padding-left: 73px;
 }
 
 .service__home--food {
-  padding-top: 60px;
-  padding-left: 131px;
+  padding-top: 62px;
+  padding-left: 133px;
 }
 
 .service__home--givt {
@@ -254,5 +255,57 @@ ul {
 
   font-size: 14px;
   line-height: 21px;
+  text-transform: uppercase;
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  padding: 47px 77px 54px 96px;
+  background-color: var(--advantages-color);
+}
+
+.advantages__info {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.advantages__info--center {
+  padding-left: 22px;
+}
+
+.advantages__strong {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-color);
+  text-transform: uppercase;
+}
+
+.advantages__span {
+  padding-top: 28px;
+
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-color-text);
+  text-transform: uppercase;
+}
+
+.advantages__text {
+  padding-top: 23px;
+
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-color-text);
   text-transform: uppercase;
 }
