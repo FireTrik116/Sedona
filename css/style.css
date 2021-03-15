@@ -44,35 +44,59 @@ ul {
   list-style: none;
 }
 
-.promo {
-  min-height: 509px;
+/* ХЕДЕР */
 
-  background-image: url("../img/shape.svg"), url("../img/index-promo.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom, 0 -1px;
+.header__container {
+  position: relative;
+  display: flex;
 }
 
-.intro {
-  padding: 43px 0;
-  min-height: 216px;
+.header__list {
+  display: flex;
 
-  text-align: center;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
 }
 
-.intro__title {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  color: var(--basic-color);
-  text-transform: uppercase;
+.header__logo {
+  position: absolute;
+  left: 552px;
+
+  cursor: pointer;
 }
 
-.intro__text {
-  margin-top: 43px;
-
+.header__link {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: bold;
   font-size: 14px;
-  font-weight: 400;
   line-height: 26px;
-  color: var(--basic-color-text);
   text-transform: uppercase;
+  color: var(--basic-color);
+
+  cursor: pointer;
+
+  transition: opacity 0.3s ease;
+}
+
+.header__link:hover {
+  opacity: 0.5;
+}
+
+.header__link:active {
+  opacity: 0.1;
+}
+
+.header__item--info {
+  margin-left: 72px;
+  margin-right: 134px;
+}
+
+.header__item--foto {
+  margin-right: 419px;
+}
+
+.header__item--map {
+  margin-right: 147px;
 }
