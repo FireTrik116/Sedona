@@ -285,8 +285,12 @@ ul {
 }
 
 .cta__search {
+  position: relative;
+
   width: 568px;
   margin: 44px auto 0 auto;
+
+  background-color: #ffffff;
 }
 
 .cta__header {
@@ -306,4 +310,12 @@ ul {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.map {
+  height: 473px;
+  margin-top: -396px;
+
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
 }
