@@ -120,10 +120,38 @@
           <h2 class="cta__title">Заинтересовались?</h2>
           <p class="cta__text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седонe</p>
           <div class="cta__search">
-            <header class="cta__header">
-              <b class="cta__label">Поиск гостиницы в седоне</b>
-            </header>
-            <div class="cta__content"></div>
+            <button class="cta__header">Поиск гостиницы в седоне</button>
+            <div class="cta__content">
+              <form action="#" class="cta__form">
+                <div class="cta__group cta__group--date">
+                  <label for="searchCheckin" class="cta__label">Дата заезда:</label>
+                  <input type="text" class="cta__input" id="searchCheckin" value="24 апреля 2017">
+                </div>
+                <div class="cta__group cta__group--date">
+                  <label for="searchCheckout" class="cta__label">Дата выезда:</label>
+                  <input type="text" class="cta__input" id="searchCheckout" value="4 июля 2017">
+                </div>
+                <div class="cta__wrapper">
+                  <div class="cta__group cta__group--count">
+                    <label for="searchAdults" class="cta__label">Взрослые:</label>
+                    <div class="cta__inner">
+                      <button class="cta__control cta__control--minus" aria-label="Меньше"></button>
+                      <input type="text" class="cta__input" id="searchAdults" value="2">
+                      <button class="cta__control cta__control--plus" aria-label="Больше"></button>
+                    </div>
+                  </div>
+                  <div class="cta__group cta__group--count">
+                    <label for="searchChildren" class="cta__label cta__label--children">Дети:</label>
+                    <div class="cta__inner">
+                      <button class="cta__control cta__control--minus" aria-label="Меньше"></button>
+                      <input type="text" class="cta__input" id="searchChildren" value="0">
+                      <button class="cta__control cta__control--plus" aria-label="Больше"></button>
+                    </div>
+                  </div>
+                </div>
+                <button class="cta__button" type="submit">Найти</button>
+              </form>
+            </div>
           </div>
         </section>
         <section class="map">
