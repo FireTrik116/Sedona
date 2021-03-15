@@ -54,16 +54,15 @@ ul {
 .header__list {
   display: flex;
 
-  align-items: center;
-  width: 100%;
-  margin: 15px 0;
+  text-align: left;
 }
 
-.header__logo {
-  position: absolute;
-  left: 552px;
-
-  cursor: pointer;
+.intro__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--basic-color);
+  text-transform: lowercase;
 }
 
 .header__link {
