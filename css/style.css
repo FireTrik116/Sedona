@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  width: 1240px;
+  width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -54,15 +54,16 @@ ul {
 .header__list {
   display: flex;
 
-  text-align: left;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
 }
 
-.intro__title {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  color: var(--basic-color);
-  text-transform: lowercase;
+.header__logo {
+  position: absolute;
+  left: 552px;
+
+  cursor: pointer;
 }
 
 .header__link {
@@ -98,4 +99,37 @@ ul {
 
 .header__item--map {
   margin-right: 147px;
+}
+
+.promo {
+  min-height: 509px;
+
+  background-image: url("../img/shape.svg"), url("../img/index-promo.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom, 0 -1px;
+}
+
+.intro {
+  padding: 43px 0;
+  min-height: 216px;
+
+  text-align: center;
+}
+
+.intro__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--basic-color);
+  text-transform: uppercase;
+}
+
+.intro__text {
+  margin-top: 43px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--basic-color-text);
+  text-transform: uppercase;
 }
