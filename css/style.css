@@ -8,6 +8,7 @@
   --blue-color: #81b3d2;
   --advantages-color: #eee;
   --brown-color: #766357;
+  --rating-color: #666666;
 
   --brown-hover-color: #604e43;
   --brown-active-color: #503e33;
@@ -631,4 +632,240 @@ ul {
 
   padding-top: 10px;
   padding-right: 9px;
+}
+
+.result {
+  min-height: 540px;
+
+  background-color: #ffffff;
+}
+
+.result__header {
+  display: flex;
+  align-items: center;
+  padding: 0 73px;
+  min-height: 90px;
+
+  border-bottom: 1px solid var(--input-focus-bg-color);
+}
+
+.result__title {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-color);
+}
+
+.result__list {
+  display: flex;
+  margin: -3px 0 0 46px;
+}
+
+.result__item {
+  margin-right: 33px;
+
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-color);
+}
+
+.result__item--title {
+  margin-right: 41px;
+}
+
+.result__filter {
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: uppercase;
+
+  border: none;
+  border-bottom: 1px dotted var(--blue-color);
+  background-color: transparent;
+  opacity: 0.3;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.result__filter:hover {
+  color: var(--blue-color);
+
+  border: none;
+  opacity: 1;
+}
+
+.result__filter:active {
+  color: var(--basic-color);
+
+  border: none;
+  outline: none;
+  opacity: 1;
+}
+
+.result__filter--active {
+  color: var(--blue-color);
+
+  border: none;
+  opacity: 1;
+}
+
+.result__controls {
+  display: flex;
+  width: 34px;
+  justify-content: space-between;
+  margin: 7px 0 0 auto;
+}
+
+.result__control {
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.result__control svg {
+  transition: fill 0.3s ease;
+}
+
+.result__control--selected svg {
+  fill: var(--blue-color);
+}
+
+.result__control--down svg {
+  transform: rotate(180deg);
+}
+
+.result__control:hover:not(.result__control--selected) svg {
+  fill: var(--basic-color);
+}
+
+.result__control:active {
+  outline: none;
+}
+
+.result__control:active:not(.result__control--selected) svg {
+  fill: var(--blue-color);
+}
+
+.result__hotel {
+  display: flex;
+  min-height: 150px;
+  padding: 30px 73px 26px 73px;
+
+  border-bottom: 1px solid var(--input-focus-bg-color);
+}
+
+.result__details {
+  margin: -6px 0 0 29px;
+}
+
+.result__name {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 26px;
+  color: var(--basic-color);
+
+  transition: color 0.3s ease;
+}
+
+.result__name:hover {
+  color: var(--blue-color);
+}
+
+.result__name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.result__type {
+  display: flex;
+  justify-content: space-between;
+  width: 181px;
+  margin-top: 7px;
+
+  font-size: 14px;
+  border-inline-end-width: 21px;
+  text-transform: uppercase;
+}
+
+.result__buttons {
+  display: flex;
+  margin-top: 18px;
+}
+
+.result__link {
+  min-width: 110px;
+  padding: 5px 0;
+  margin-right: 6px;
+
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: var(--blue-color);
+
+  transition: all 0.3s ease;
+}
+
+.result__link:hover {
+  background-color: var(--button-hover-color);
+}
+
+.result__link:active {
+  background-color: var(--button-active-color);
+
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.result__link--brown {
+  min-width: 142px;
+
+  background-color: var(--brown-color);
+}
+
+.result__link--brown:hover {
+  background-color: var(--brown-hover-color);
+}
+
+.result__link--brown:active {
+  background-color: var(--brown-active-color);
+}
+
+.result__data {
+  margin-left: auto;
+}
+
+.result__stars {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -2px;
+}
+
+.result__star {
+  margin-left: 5px;
+  width: 19px;
+  height: 17px;
+
+  background-image: url("../img/icon/icon-star.svg");
+  background-repeat: no-repeat;
+}
+
+.result__rating {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 110px;
+  margin-top: 46px;
+  padding: 3px 10px 3px 16px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 21px;
+  color: var(--rating-color);
+
+  background-color: var(--input-bg-color);
 }
