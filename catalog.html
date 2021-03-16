@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sedona</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__logo" href="#">
+          <img
+            class="header__img"
+            src="img/icon/logo.svg"
+            width="138"
+            height="70"
+            alt="Логотип Sedona"
+          />
+        </a>
+        <ul class="header__list">
+          <li class="header__item header__item--info">
+            <a href="#" class="header__link">Информация</a>
+          </li>
+          <li class="header__item header__item--foto">
+            <a href="#" class="header__link">Фото и видео</a>
+          </li>
+          <li class="header__item header__item--map">
+            <a href="#" class="header__link">Карта штата</a>
+          </li>
+          <li class="header__item header__item--host">
+            <a href="#" class="header__link">Гостиницы</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="result">
+          <h2 class="visually-hidden">Результат поиска</h2>
+          <header class="result__header">
+            <b class="result__title">Найдено:
+              <span class="result__count">3</span>
+            </b>
+            <ul class="result__list">
+              <li class="result__item result__item--title">Сортировка:</li>
+              <li class="result__item"><button class="result__filter result__filter--active">По цене</button></li>
+              <li class="result__item"><button class="result__filter">По типу</button></li>
+              <li class="result__item"><button class="result__filter">По рейтингу</button></li>
+            </ul>
+            <div class="result__controls">
+              <button class="result__control result__control--up" aria-label="По убыванию">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="#CACACA" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 0L0 10H11L5.5 0Z"/>
+                </svg>
+              </button>
+              <button class="result__control result__control--down result__control--selected" aria-label="По возрастанию">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="#CACACA" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 0L0 10H11L5.5 0Z"/>
+                </svg>
+              </button>
+            </div>
+          </header>
+          <div class="result__content">
+            <article class="result__hotel">
+              <div class="result__image-box">
+                <img src="img/result-hotel-1.jpg" alt="Изображения отеля" width="135" height="90" class="result__image">
+              </div>
+              <div class="result__details">
+                <a href="#" class="result__name">Amara Resort & Spa</a>
+                <p class="result__type">Гостиница
+                  <span class="result__price">От 4000 Р.</span>
+                </p>
+                <div class="result__buttons">
+                  <a href="#" class="result__link">Подробнее</a>
+                  <a href="#" class="result__link result__link--brown">Забронировать</a>
+                </div>
+              </div>
+              <div class="result__data">
+                <ul class="result__stars">
+                  <li class="result__star"></li>
+                  <li class="result__star"></li>
+                  <li class="result__star"></li>
+                  <li class="result__star"></li>
+                </ul>
+                <p class="result__rating">Рейтинг:
+                  <span class="result__number">8,5</span>
+                </p>
+              </div>
+            </article>
+            <article class="result__hotel">
+              <div class="result__image-box">
+                <img src="img/result-hotel-2.jpg" alt="Изображения отеля" width="135" height="90" class="result__image">
+              </div>
+              <div class="result__details">
+                <a href="#" class="result__name">Desert Quail Inn</a>
+                <p class="result__type">Мотель
+                  <span class="result__price">От 3000 Р.</span>
+                </p>
+                <div class="result__buttons">
+                  <a href="#" class="result__link">Подробнее</a>
+                  <a href="#" class="result__link result__link--brown">Забронировать</a>
+                </div>
+              </div>
+              <div class="result__data">
+                <ul class="result__stars">
+                  <li class="result__star"></li>
+                  <li class="result__star"></li>
+                  <li class="result__star"></li>
+                </ul>
+                <p class="result__rating">Рейтинг:
+                  <span class="result__number">8,9</span>
+                </p>
+              </div>
+            </article>
+            <article class="result__hotel">
+              <div class="result__image-box">
+                <img src="img/result-hotel-3.jpg" alt="Изображения отеля" width="135" height="90" class="result__image">
+              </div>
+              <div class="result__details">
+                <a href="#" class="result__name">Villas at Poco Diablo</a>
+                <p class="result__type">Апартаменты
+                  <span class="result__price">От 2000 Р.</span>
+                </p>
+                <div class="result__buttons">
+                  <a href="#" class="result__link">Подробнее</a>
+                  <a href="#" class="result__link result__link--brown">Забронировать</a>
+                </div>
+              </div>
+              <div class="result__data">
+                <ul class="result__stars">
+                  <li class="result__star"></li>
+                  <li class="result__star"></li>
+                </ul>
+                <p class="result__rating">Рейтинг:
+                  <span class="result__number">9,2</span>
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__col">
+          <div class="footer__left">
+            <a href="#" class="footer__hashtag">#visitSEDONA</a>
+            <a class="footer__phone" href="tel:+7496660166"
+              >ТЕЛ: +7(495) 666-01-66</a
+            >
+          </div>
+          <div class="footer__center">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__social"
+                  ><img
+                    class="footer__img"
+                    src="img/icon/icon-twitter.svg"
+                    alt="Twitter"
+                    width="17"
+                    height="17"
+                /></a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__social"
+                  ><img
+                    class="footer__img"
+                    src="img/icon/fb-icon.svg"
+                    alt="facebook"
+                    width="12"
+                    height="22"
+                /></a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__social"
+                  ><img
+                    class="footer__img"
+                    src="img/icon/icon-youtube.svg"
+                    alt="Youtube"
+                    width="20"
+                    height="16"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__right">
+            <span class="footer__span">Website by</span>
+            <a href="#" class="footer__link"
+              ><img
+                class="footer__logo"
+                src="img/icon/logo-htmlacademy.svg"
+                alt="Логотип Htmlacademy"
+                width="115"
+                height="41"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
